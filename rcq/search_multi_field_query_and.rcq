@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rest-client version="3.2"><request><http-version>1.1</http-version><http-follow-redirects/><URL>http://localhost:9200/minecraft/inventory/_search?pretty</URL><method>POST</method><body><string content-type="application/json" charset="UTF-8">{
+  "query":{
+    "query_string" : {
+        "fields" : ["item", "player"],
+        "query" : "pickaxe AND dad",
+        "use_dis_max" : true
+    }
+  }
+}
+</string></body></request></rest-client>

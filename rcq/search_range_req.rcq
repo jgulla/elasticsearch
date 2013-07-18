@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rest-client version="3.2"><request><http-version>1.1</http-version><http-follow-redirects/><URL>http://localhost:9200/minecraft/inventory/_search?pretty</URL><method>POST</method><body><string content-type="application/json" charset="UTF-8">{
+    "query" : {
+       "range" : {
+          "quantity" : {
+             "from" : 10,
+              "to" : 100 
+            }
+       }
+     }
+}</string></body></request></rest-client>
